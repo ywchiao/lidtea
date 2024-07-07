@@ -1,0 +1,65 @@
+/**
+ * theme.css
+ *
+ * @file CSS setting for site's header.
+ * @license MIT
+ */
+
+@keyframes rise {
+  0% {
+    top: 24px;
+    transform: scaleY(0);
+  }
+
+  100% {
+    top: 0px;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes fall {
+  from {
+    top: 0px;
+    transform: scaleY(1);
+  }
+
+  to {
+    top: 24px;
+    transform: scaleY(0);
+  }
+}
+
+body {
+  & header {
+    & button {
+      background-color: light-dark(var(--light-header-background), var(--dark-header-background));
+      color: light-dark(var(--light-text-lighter), var(--dark-text-lighter));
+      border: none;
+      margin-right: 1em;
+    }
+  }
+}
+
+#moon {
+  position: relative;
+  left: 0px;
+  animation: rise 0s forwards;
+}
+
+#sun {
+  position: relative;
+  left: 24px;
+  animation: fall 0s forwards;
+}
+
+@media (prefers-color-scheme: dark) {
+  #moon {
+    animation: fall 0s forwards;
+  }
+
+  #sun {
+    animation: rise 0s forwards;
+  }
+}
+
+/* theme.css */

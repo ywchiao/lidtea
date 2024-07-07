@@ -1,0 +1,46 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+enableGitInfo = true
+hasCJKLanguage = true
+
+[markup]
+  [markup.highlight]
+    noclasses = false
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      wrapStandAloneImageWithinParagraph = false
+      [markup.goldmark.parser.attribute]
+        block = true
+    # 用來允許 Markdown 文件內的 raw html
+    [markup.goldmark.renderer]
+      unsafe = true
+    # 用來處理 CJK Markdown 文件中換行字元和強調字元 (**) 的空白問題
+    [markup.goldmark.extensions.CJK]
+      enable=true
+      eastAsianLineBreaks=true
+      escapedSpace=true
+
+[params]
+  author = 'Blog Author'
+  subtitle = 'subtitle of this blog'
+
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 20
+
+[[menus.main]]
+name = 'Tags'
+pageRef = '/tags'
+weight = 30
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"

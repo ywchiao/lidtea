@@ -1,0 +1,41 @@
+/**
+ * summary.css
+ *
+ * @file CSS setting for site's main menu.
+ * @license MIT
+ */
+
+main {
+  width: 60vw;
+
+  & section {
+    background-color: light-dark(var(--light-text-background), var(--dark-text-background));
+    border-radius: var(--border-radius);
+    margin: 1em 0;
+    padding: 1em;
+
+    &:hover {
+      border-bottom: 1px solid light-dark(var(--light-border), var(--dark-border));
+    }
+
+    & header {
+      display: flex;
+      justify-content: space-between;
+      background-color: light-dark(var(--light-text-background), var(--dark-text-background));
+      height: auto;
+      width: inherit;
+      border: none;
+
+      & h2 {
+        margin: 0;
+        color: light-dark(var(--light-text), var(--dark-text));
+      }
+
+      & time {
+        color: light-dark(var(--light-text-lighter), var(--dark-text-lighter));
+      }
+    }
+  }
+}
+
+/* summary.css */

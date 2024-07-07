@@ -1,0 +1,32 @@
+/**
+ * tags.css
+ *
+ * @file CSS setting for tags.
+ * @license MIT
+ */
+
+main {
+  & ul {
+    display: flex;
+    width: inherit;
+
+    & li {
+      margin: .5em;
+      padding: .25em 0;
+
+      & a {
+        border-radius: var(--border-radius);
+        background-color: light-dark(var(--light-text-background), var(--dark-text-background));
+        color: light-dark(var(--light-text), var(--dark-text));
+        padding: 0 .5em;
+
+        &:hover {
+          background-color: light-dark(var(--light-text), var(--dark-text));
+          color: light-dark(var(--light-text-background), var(--dark-text-background));
+        }
+      }
+    }
+  }
+}
+
+/* tags.css */

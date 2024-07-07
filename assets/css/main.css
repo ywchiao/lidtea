@@ -1,0 +1,60 @@
+/**
+ * main.css
+ *
+ * @file basic CSS setting.
+ * @license MIT
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+/**
+ *  1. for the light-dark() function
+ */
+:root {
+  color-scheme: light dark; /* 1 */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: light-dark(var(--light-background), var(--dark-background));
+  color: light-dark(var(--light-text), var(--dark-text));
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column; justify-content: center;
+  max-width: 60vw;
+}
+
+footer {
+  border-top: 1px solid light-dark(var(--light-border), var(--dark-border));
+  margin-top: 1rem;
+}
+
+a {
+/*  color: light-dark(var(--light-text), var(--dark-text)); */
+  color: light-dark(var(--light-link), var(--dark-link));
+  text-decoration: none;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* main.css */

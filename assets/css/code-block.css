@@ -1,0 +1,19 @@
+/**
+ * code-block.css
+ *
+ * @file CSS setting for code blocks.
+ * @license MIT
+ */
+
+.highlight {
+  border-radius: var(--border-radius);
+  border-bottom: solid 2px light-dark(var(--light-border), var(--dark-border));
+}
+
+.highlight div,
+.highlight pre {
+  padding: 0 .25em;
+  overflow-x: auto;
+}
+
+/* code-block.css */

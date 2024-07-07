@@ -1,0 +1,37 @@
+/**
+ * site-nav.css
+ *
+ * @file CSS setting for site's navbar.
+ * @license MIT
+ */
+
+body {
+  & header {
+    & nav {
+      display: flex;
+      justify-content: end;
+      flex: 1 0 auto;
+
+      & ul {
+        display: flex;
+        flex: 1 0 auto;
+        justify-content: end;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        & a {
+          margin: 0 .5em;
+          padding-bottom: .25em;
+          color: light-dark(var(--light-text), var(--dark-text));
+
+          &:hover {
+            border-bottom: 2px solid light-dark(var(--light-border), var(--dark-border));
+          }
+        }
+      }
+    }
+  }
+}
+
+/* site-nav.css */

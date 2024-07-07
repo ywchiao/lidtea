@@ -1,0 +1,43 @@
+/**
+ * color.css
+ *
+ * @license MIT
+ */
+
+:root {
+  /* background */
+
+  --dark-background: hsl(30 16% 4%); /* #0c0a09; */
+
+  --light-background: hsl(30 32% 94%); /* #f5f0eb; */
+
+  /* border */
+
+  --dark-border: hsl(30 16% 64%); /* #b2a395; */
+
+  --light-border: hsl(30 32% 24%); /* #513d2a */
+
+  /* link */
+
+  --dark-link: hsl(30 16% 48%); /* #8e7a67; */
+
+  --light-link: hsl(30 32% 48%); /* #a27a53 */
+
+  /* text */
+
+  --dark-text: hsl(30 16% 64%); /* #b2a395; */
+  --dark-text-background: hsl(30 16% 8%); /* #181411; */
+  --dark-text-lighter: hsl(30 16% 32%); /* #5f5245; */
+
+  --light-text: hsl(30 32% 24%); /* #513d2a; */
+  --light-text-background: hsl(30 32% 96%); /* #f8f5f2; */
+  --light-text-lighter: hsl(30 32% 64%); /* #c1a386; */
+
+  /* site header */
+
+  --dark-header-background: hsl(30 16% 12%); /* #231f1a; */
+
+  --light-header-background: hsl(30 32% 92%); /* #f1ebe4; */
+}
+
+/* color.css */

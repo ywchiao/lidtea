@@ -1,0 +1,34 @@
+/**
+ * post.css
+ *
+ * @file CSS setting for post.
+ * @license MIT
+ */
+
+main {
+  & article {
+    background-color: light-dark(var(--light-text-background), var(--dark-text-background));
+    border-radius: var(--border-radius);
+    margin: 1em 0;
+    padding: 1em;
+
+    & header {
+      display: flex;
+      justify-content: space-between;
+      background-color: light-dark(var(--light-text-background), var(--dark-text-background));
+      height: auto;
+      width: inherit;
+      border: none;
+
+      & h1 {
+        margin: 0;
+      }
+
+      & time {
+        color: light-dark(var(--light-text-lighter), var(--dark-text-lighter));
+      }
+    }
+  }
+}
+
+/* post.css */

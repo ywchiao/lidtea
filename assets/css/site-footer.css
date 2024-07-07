@@ -1,0 +1,42 @@
+/**
+ * site-footer.css
+ *
+ * @file CSS setting for site's footer.
+ * @license MIT
+ */
+
+body {
+  & footer {
+    font-size: x-small;
+
+    & p {
+      display: flex;
+
+      /**
+       * 1. \00a0: no-break space (NBSP) to avoid line-breaking
+       *   and/or multiple space characters collapsing.
+       */
+      & span + span:before {
+        color: light-dark(var(--light-text), var(--dark-text));
+        content: "\00a0•"; /* 1 */
+        padding-right: .5em;
+      }
+
+      & span a {
+        padding-left: .5em;
+        color: light-dark(var(--light-text), var(--dark-text));
+      }
+
+      & span span {
+        padding-right: .5em;
+      }
+
+      & span span,
+      & span:has(a) {
+        color: light-dark(var(--light-text-lighter), var(--dark-text-lighter));
+      }
+    }
+  }
+}
+
+/* site-footer.css */

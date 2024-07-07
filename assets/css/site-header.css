@@ -1,0 +1,20 @@
+/**
+ * site-header.css
+ *
+ * @file CSS setting for site's header.
+ * @license MIT
+ */
+
+body {
+  & header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    margin: 0;
+    padding: 1em 0;
+    background-color: light-dark(var(--light-header-background), var(--dark-header-background));
+  }
+}
+
+/* site-header.css */

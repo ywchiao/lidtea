@@ -1,0 +1,31 @@
+name = 'Lidtea'
+license = 'MIT'
+licenselink = 'https://github.com/ywchiao/lidtea.git/LICENSE'
+description = 'A simple blog theme for Hugo'
+
+# The home page of the theme, where the source can be found
+homepage = 'https://github.com/ywchiao/lidtea'
+
+# If you have a running demo of the theme
+demosite = 'https://ywchiao.github.io/blog'
+
+# Taxonomy terms
+tags = ['blog', 'hugo']
+features = []
+
+# If the theme has multiple authors
+#authors = [
+#  {name = 'Name of author', homepage = 'Website of author'},
+#  {name = 'Name of author', homepage = 'Website of author'}
+#]
+
+# If the theme has a single author
+[author]
+  name = 'Yiwei Chiao'
+  homepage = 'https://ywchiao.github.io/blog'
+
+# If porting an existing theme
+#[original]
+#  author = 'Name of original author'
+#  homepage = 'Website of original author'
+#  repo = 'https://github.com/owner/repo'
